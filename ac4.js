@@ -16,13 +16,11 @@ console.log(total);
 // 2. Suma tots els salaris de l'objecte fent servir Object.keys en un for.
 let newTotal = 0;
 let keys = Object.keys(salaris);
-
-for (let key of keys) {
-    newTotal += salaris[key];
+console.log(keys);
+for (let TotalSalaris in keys) {
+    newTotal += salaris[keys[TotalSalaris]];
 }
-
 console.log(newTotal);
-
 
 // 3. Suma tots els salaris de l'objecte fent servir Object.values en un for.
 
