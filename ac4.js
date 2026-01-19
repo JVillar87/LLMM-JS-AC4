@@ -26,7 +26,7 @@ console.log(newTotal);
 
 let TotalSalaris = 0;
 let values = Object.values(salaris);
-
+console.log(values);
 for (let value of values) {
     TotalSalaris += value;
 }
