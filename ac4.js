@@ -1,8 +1,8 @@
 // OBJECTES
 let salaris = {
-    John: 30_000,
-    Mary: 40_000,
-    Robert: 50_000
+    John: 30.000,
+    Mary: 40.000,
+    Robert: 50.000
 }
 
 // 1. Suma tots els salaris de l'objecte fent servir un for.. in.
@@ -14,6 +14,7 @@ for (let money in salaris) {
 console.log(total);
 
 // 2. Suma tots els salaris de l'objecte fent servir Object.keys en un for.
+
 let newTotal = 0;
 let keys = Object.keys(salaris);
 console.log(keys);
