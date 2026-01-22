@@ -8,8 +8,8 @@ let salaris = {
 // 1. Suma tots els salaris de l'objecte fent servir un for.. in.
 
 let total = 0;
-for (let money in salaris) {
-    total += salaris[money];
+for (treballador in salaris) {
+    total += salaris[treballador];
 }
 console.log(total);
 
@@ -18,8 +18,8 @@ console.log(total);
 let newTotal = 0;
 let keys = Object.keys(salaris);
 console.log(keys);
-for (let TotalSalaris in keys) {
-    newTotal += salaris[keys[TotalSalaris]];
+for (let treballador of keys) {
+    newTotal += salaris[treballador];
 }
 console.log(newTotal);
 
@@ -34,6 +34,14 @@ for (let value of values) {
 console.log(TotalSalaris);
 
 // 4. Suma tots els salaris de l'objecte fent servir Object.entries en un for.
+
+let Salaries = 0;
+let entries = Object.entries(salaris);
+console.log(entries);
+for (let entry of entries) {
+    Salaries += entry[1];
+}
+console.log(Salaries);
 
 let ladder = {
     step: 0,
