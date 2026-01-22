@@ -38,10 +38,13 @@ console.log(TotalSalaris);
 let Salaries = 0;
 let entries = Object.entries(salaris);
 console.log(entries);
-for (let entry of entries) {
-    Salaries += entry[1];
+for ([treballador, salary] of entries) {
+    Salaries += salary;
 }
 console.log(Salaries);
+
+
+
 
 let ladder = {
     step: 0,
